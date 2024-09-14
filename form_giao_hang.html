@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone NVB</title>
+    <link rel="icon" href="./image/logo-main.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <script src="./js/taikhoan.js"></script>
+    <script src="./js/checkform.js"></script>
+    <script src="./js/noidung.js"></script>
+    <script src="./css/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+        <div class="home">
+          <a href="./ShopSmartphone.html" class="Home"><img src="./image/logo-1.png" class="logo" alt=""></a>
+        </div>
+        <div class="search-main">
+          <input type="text" class="search" placeholder="tìm kiếm sản phẩm" size="50" onclick="showSearchBox()">
+          <i class='bx bx-search' ></i>
+        </div>
+        <div class="Hethong">
+          <div class="href"><a href="./ShopSmartphone.html"><i class='bx bx-home' ></i>Trang chủ</a></div>
+          <div class="href"><a href="./Gioithieu.html"><i class='bx bxs-user-rectangle'></i>Giới thiệu</a></div>
+          <div class="href"><a href="./Giohang.html"><i class='bx bxs-cart-add icon'></i>Giỏ Hàng<b id="count" >0</b></a></div>
+          <div class="href"><a href="./signin.html"><i class='bx bx-edit'></i>Đăng Ký</a></div>
+
+        </div>
+    </div>
+  </header>
+    <div class="menu-login">
+        <img src="./image/shipper.jpg" alt="">
+        <div class="form-login">
+        <div class="title"><h3>ĐĂNG KÝ GIAO HÀNG</h3></div>
+        <form name="F1" method="post">
+            <input type="text" name="name" id="name3" placeholder="Họ và Tên">
+            <input type="number" name="phone" id="phone3" placeholder="Số Điện Thoại">
+            <input type="text" name="diachi" id="diachi3" placeholder="Địa Chỉ">
+            <input type="text"name="yeucau" id="yeucau" placeholder="Thêm Yêu Cầu Khác">
+            <div class="buton"><button type="button" onclick="checkform()">Giao Hàng</button></div>
+        </form>
+        
+        <div id="xuat">
+            <div class="title"><h3>THÔNG TIN GIAO HÀNG</h3></div>
+            <p >Họ Và Tên : <span id="nguoinhan"></span></p>
+            <p >Số Điện Thoại : <span id="sdt"></span></p>
+            <p >Địa Chỉ : <span id="diachinhan"></span></p>
+            <p >Yêu Cầu Khác : <span id="yeucaukhac"></span></p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row row2">
+        <div class="col-sm-3">
+          <h4>THÔNG TIN LIÊN HỆ</h4>
+          <p><b>Mua nhanh Online:</b> 19008922 (8h-24h mỗi ngày)</p>
+          <p><b>Góp Ý/ Phản Ánh về DV:</b> 0364444247 (8h-24h mỗi ngày)</p>
+          <p><b>Bảo hành - Hỗ trợ kỹ thuật:</b> 0868922247 (9h-21h mỗi ngày)</p>
+          <p><b>Hỗ trợ khách hàng:</b>hotro@112233.vn</p>
+        </div>
+        <div class="col-sm-3">
+          <h4>THÔNG TIN & CHÍNH SÁCH</h4>
+          <p>Ưu đãi Giá Kho Member</p>
+          <p>Chính sách giao nhận - kiểm hàng</p>
+          <p>Chính sách bảo mật thông tin</p>
+          <p>Dịch vụ sửa chữa</p>
+        </div>
+        <div class="col-sm-3">
+          <h4>SHOWROOM GIÁ</h4>
+          <p><b>Giờ hoạt động Showroom: 8h30 - 21h30</b></p>
+          <p>947 Quang Trung, P14, Quận Gò Vấp, TP. HCM</p>
+          <p>56 Lê Văn Việt, Phường Hiệp Phú, TP. Thủ Đức</p>
+          <p>1247, Đường 3 Tháng 2, P6, Quận 11, TP. HCM</p>
+        </div>
+        <div class="col-sm-3">
+          <h4>DỊCH VỤ VÀ THÔNG TIN KHÁC</h4>
+          <p>Tuyển dụng</p>
+          <p>Điều khoản và sử dụng</p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

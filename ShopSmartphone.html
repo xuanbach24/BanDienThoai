@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone NVB</title>
+    <link rel="icon" href="./image/logo-main.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ShopSmartphone.css">
+    <script src="./css/bootstrap.bundle.min.js"></script>
+    <script src="./js/search.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <script src="./js/store.js"></script>
+    <script src="./js/slide-show.js"></script>
+    <script src="./js/taikhoan.js"></script>
+</head>
+<body>
+  <!-- start-header -->
+  <header>
+    <div class="container-fluid">
+        <div class="home">
+          <a href="./ShopSmartphone.html" class="Home"><img src="./image/logo-1.png" class="logo" alt=""></a>
+        </div>
+        <div class="search-main">
+          <input type="text" class="search" placeholder="tìm kiếm sản phẩm" size="50" onclick="showSearchBox()">
+          <i class='bx bx-search' ></i>
+          <!-- tim-kiem -->
+        <div class="box-search-main" id="tim" >
+        </div>
+        <!-- tim-kiem -->
+        </div>
+        <div class="Hethong">
+          <div class="href"><a href="./ShopSmartphone.html"><i class='bx bx-home' ></i>Trang chủ</a></div>
+          <div class="href"><a href="./Gioithieu.html"><i class='bx bxs-user-rectangle'></i>Giới thiệu</a></div>
+          <div class="href"><a href="./Giohang.html"><i class='bx bxs-cart-add icon'></i>Giỏ Hàng<b id="count" >0</b></a></div>
+          <div class="href" id="login" onclick="login_main()">
+            <a ><i class='bx bx-edit'></i>Đăng Ký</a>
+            <div id="login-main">
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+  </header>
+  <!-- End-header -->
+
+      <main onclick="none()">
+        
+
+        <div class="giohang-main">
+
+        <!-- banner -->
+        <div class="banner">
+          <img class="container" src="./image/baner-1.png" alt="">
+        </div>
+        <!-- end-banner -->
+        
+        <!-- slide-show -->
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <h2 class="title-slide" style="margin-top: 20px;">ĐIỆN THOẠI NỔI BẬT</h2>
+          <div id="slide-show" style="max-width: 100%; display: flex; justify-content: space-evenly;">
+            <img id="img-slide1" src="./image/img-1.png" alt="">
+            <img id="img-slide2" src="./image/img-2.png" alt="">
+            <img id="img-slide3" src="./image/img-3.png" alt="">
+          </div>
+        <!-- end-slide-show -->
+
+
+        <!-- content -->
+            <div class="back-ground-content"
+            style="
+            margin-top:10px;width:100%;display:grid; ">
+              
+              <div class="card-show" style="text-align: center">
+                <div class="box-children"   onclick="show_link(0)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/ipx.jpg"/>
+                  <h4 >IPHONE X 256GB CHÍNH HÃNG VN/A BẢN ĐẸP</h4>
+                  <p style="text-align: left;"><span style="color: red; font-weight: bold;"> 7.970.000đ</span></p>
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">34 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+                </div>
+                <div class="card-show" style="text-align: center">
+                <div class="box-children" onclick="show_link(1)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/xsm.jpg"/>
+                  <h4>IPHONE XS MAX 256GB CHÍNH HÃNG VN/A </h4>
+                  <p style="color: red;text-align: left; font-weight:bold;"> 8.950.000đ</p>                  
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">24 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+                </div><div class="card-show" style="text-align: center">
+                <div class="box-children" onclick="show_link(2)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/11.jpg"/>
+                  <h4>IPHONE 11 256GB CHÍNH HÃNG VN/A BẢN ĐẸP</h4>
+                  <p style="color: red;text-align: left; font-weight:bold;"> 10.970.000đ</p>                                 
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">12 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+                </div><div class="card-show" style="text-align: center">
+                <div class="box-children" onclick="show_link(3)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/11prm.jpg"/>
+                  <h4>IPHONE 11 PRO MAX 256GB CHÍNH HÃNG VN/A </h4>
+                  <p style="color: red;text-align: left; font-weight:bold;"> 12.150.000đ</p>                                 
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">37 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+                </div>
+                
+                
+                <div class="card-show" style="text-align: center">
+                <div class="box-children" onclick="show_link(4)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/12.jpg"/>
+                  <h4>IPHONE 12 256GB CHÍNH HÃNG VN/A BẢN ĐEPH</h4>
+                  <p style="color: red;text-align: left; font-weight:bold;"> 13.970.000đ</p>                                 
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">17 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+                </div><div class="card-show" style="text-align: center">
+                <div class="box-children" onclick="show_link(5)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/12prm.jpg"/>
+                  <h4>IPHONE 12 PRO MAX 256GB CHÍNH HÃNG VN/A </h4>
+                  <p style="color: red;text-align: left; font-weight:bold;"> 15.970.000đ</p>                                 
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">20 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+                </div><div class="card-show" style="text-align: center">
+                <div class="box-children" onclick="show_link(6)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/13.jpg"/>
+                  <h4>IPHONE 13 256GB CHÍNH HÃNG VN/A BẢN ĐẸP</h4>
+                  <p style="color: red;text-align: left; font-weight:bold;"> 14.970.000đ</p>                                 
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">45 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+                </div><div class="card-show" style="text-align: center">
+                <div class="box-children" onclick="show_link(7)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/13prm.jpg"/>
+                  <h4>IPHONE 13 PRO MAX 256GB CHÍNH HÃNG VN/A </h4>
+                  <p style="color: red;text-align: left; font-weight:bold;"> 18.970.000đ</p>                                 
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">32 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+                </div>
+              
+                <div class="card-show" style="text-align: center">
+                <div class="box-children" onclick="show_link(8)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/14.jpg"/>
+                  <h4>IPHONE 14 256GB CHÍNH HÃNG VN/A BẢN ĐẸP</h4>
+                  <p style="color: red;text-align: left; font-weight:bold;"> 15.970.000đ</p>                                 
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">17 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+                </div><div class="card-show" style="text-align: center">
+                <div class="box-children" onclick="show_link(9)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/14prm.jpg"/>
+                  <h4>IPHONE 14 PRO MAX 256GB CHÍNH HÃNG VN/A </h4>
+                  <p style="color: red;text-align: left; font-weight:bold;"> 20.970.000đ</p>                                 
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">19 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+                </div><div class="card-show" style="text-align: center">
+                <div class="box-children" onclick="show_link(10)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/15.jpg"/>
+                  <h4>IPHONE 15 256GB CHÍNH HÃNG VN/A BẢN ĐẸP</h4>
+                  <p style="color: red;text-align: left; font-weight:bold;"> 16.970.000đ</p>                                 
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">41 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+                </div><div class="card-show" style="text-align: center">
+                <div class="box-children" onclick="show_link(11)">
+                  <span class="sale">Giảm 10%</span>
+                  <img src="./image/15prm.jpg"/>
+                  <h4>IPHONE 15 PRO MAX 256GB CHÍNH HÃNG VN/A </h4>
+                  <p style="color: red;text-align: left; font-weight:bold;"> 25.970.000đ</p>                                 
+                  <p style="color: #ffd600;text-align: left;"> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'> </i><b style="color: black; margin-left: 12px;">46 Đánh giá</b></p>
+                  <input type="number" name="soluong" min="1" max="10" value="1">
+                  <button onclick="themvaogiohang(this)" id="addtocart">Add To Cart</button>
+                </div>
+
+              </div>
+              
+              <div>
+              </div>
+            </div>
+            <!-- end- content -->
+          </div>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <div class="row row2">
+          <div class="col-sm-3">
+            <h4>THÔNG TIN LIÊN HỆ</h4>
+            <p><b>Mua nhanh Online:</b> 19008922 (8h-24h mỗi ngày)</p>
+            <p><b>Góp Ý/ Phản Ánh về DV:</b> 0364444247 (8h-24h mỗi ngày)</p>
+            <p><b>Bảo hành - Hỗ trợ kỹ thuật:</b> 0868922247 (9h-21h mỗi ngày)</p>
+            <p><b>Hỗ trợ khách hàng:</b>hotro@112233.vn</p>
+          </div>
+          <div class="col-sm-3">
+            <h4>THÔNG TIN & CHÍNH SÁCH</h4>
+            <p>Ưu đãi Giá Kho Member</p>
+            <p>Chính sách giao nhận - kiểm hàng</p>
+            <p>Chính sách bảo mật thông tin</p>
+            <p>Dịch vụ sửa chữa</p>
+          </div>
+          <div class="col-sm-3">
+            <h4>SHOWROOM GIÁ</h4>
+            <p><b>Giờ hoạt động Showroom: 8h30 - 21h30</b></p>
+            <p>947 Quang Trung, P14, Quận Gò Vấp, TP. HCM</p>
+            <p>56 Lê Văn Việt, Phường Hiệp Phú, TP. Thủ Đức</p>
+            <p>1247, Đường 3 Tháng 2, P6, Quận 11, TP. HCM</p>
+          </div>
+          <div class="col-sm-3">
+            <h4>DỊCH VỤ VÀ THÔNG TIN KHÁC</h4>
+            <p>Tuyển dụng</p>
+            <p>Điều khoản và sử dụng</p>
+          </div>
+        </div>
+      </footer>
+      <!-- end- footer -->
+
+</body>
+</html>

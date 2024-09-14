@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Giohang.css" />
+    <link rel="icon" href="./image/logo-main.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.bundle.min.js" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="./js/store.js"></script>
+    <script src="./js/taikhoan.js"></script>
+    <title>Giỏ Hàng</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+          <div class="home">
+            <a href="./ShopSmartphone.html" class="Home"><img src="./image/logo-1.png" class="logo" alt=""></a>
+          </div>
+          <div class="search-main">
+            <input type="text" class="search" placeholder="tìm kiếm sản phẩm" size="50">
+            <i class='bx bx-search' ></i>
+          </div>
+          <div class="Hethong">
+            <div class="href"><a href="./ShopSmartphone.html"><i class='bx bx-home' ></i>Trang chủ</a></div>
+            <div class="href"><a href="./Gioithieu.html"><i class='bx bxs-user-rectangle'></i>Giới thiệu</a></div>
+            <div class="href"><a><i class='bx bxs-cart-add icon'></i>Giỏ Hàng<b id="count" >0</b></a></div>
+            <div class="href"><a href="./signin.html"><i class='bx bx-edit'></i>Đăng Ký</a></div>
+  
+          </div>
+      </div>
+    </header>
+    <main>
+      <div class="content-main">
+      <div class="giohang-main">
+        <h4 class="title">Danh sách sản phẩm</h4>
+        <!-- start- store -->
+        <div id="table-store">
+          <table>
+            <tr>
+              <th class="stt">STT</th>
+              <th class="imag">Hình</th>
+              <th class="namesp">Tên sản phẩm</th>
+              <th class="dongia">Đơn giá</th>
+              <th class="soluong">Số lượng</th>
+              <th class="thanhtien">Thành tiền (VND)</th>
+            </tr>
+            <tbody id="allcard" >
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer>
+      <div class="row">
+        <div class="col-sm-3">
+          <h4>THÔNG TIN LIÊN HỆ</h4>
+          <p><b>Mua nhanh Online:</b> 19008922 (8h-24h mỗi ngày)</p>
+          <p><b>Góp Ý/ Phản Ánh về DV:</b> 0364444247 (8h-24h mỗi ngày)</p>
+          <p><b>Bảo hành - Hỗ trợ kỹ thuật:</b> 0868922247 (9h-21h mỗi ngày)</p>
+          <p><b>Hỗ trợ khách hàng:</b>hotro@112233.vn</p>
+        </div>
+        <div class="col-sm-3">
+          <h4>THÔNG TIN & CHÍNH SÁCH</h4>
+          <p>Ưu đãi Giá Kho Member</p>
+          <p>Chính sách giao nhận - kiểm hàng</p>
+          <p>Chính sách bảo mật thông tin</p>
+          <p>Dịch vụ sửa chữa</p>
+        </div>
+        <div class="col-sm-3">
+          <h4>SHOWROOM GIÁ</h4>
+          <p><b>Giờ hoạt động Showroom: 8h30 - 21h30</b></p>
+          <p>947 Quang Trung, P14, Quận Gò Vấp, TP. HCM</p>
+          <p>56 Lê Văn Việt, Phường Hiệp Phú, TP. Thủ Đức</p>
+          <p>1247, Đường 3 Tháng 2, P6, Quận 11, TP. HCM</p>
+        </div>
+        <div class="col-sm-3">
+          <h4>DỊCH VỤ VÀ THÔNG TIN KHÁC</h4>
+          <p>Tuyển dụng</p>
+          <p>Điều khoản và sử dụng</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

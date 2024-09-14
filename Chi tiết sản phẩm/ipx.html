@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../css/bootstrap.bundle.min.js"></script>
+    <script src="../js/iphone-color.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/bodem.js"></script>
+    <script src="../js/store.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="icon" href="../image/logo-main.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="phone-box.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Iphone NVB</title>
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="home">
+              <a href="../ShopSmartphone.html" class="Home"><img src="../image/logo-1.png" class="logo" alt=""></a>
+            </div>
+            <div class="search-main">
+              <input type="text" class="search" placeholder="tìm kiếm sản phẩm" size="50" onclick="showSearchBox()">
+              <i class='bx bx-search' ></i>
+            </div>
+            <div class="Hethong">
+              <div class="href"><a href="../ShopSmartphone.html"><i class='bx bx-home' ></i>Trang chủ</a></div>
+              <div class="href"><a href="../Gioithieu.html"><i class='bx bxs-user-rectangle'></i>Giới thiệu</a></div>
+              <div class="href"><a href="../Giohang.html"><i class='bx bxs-cart-add icon'></i>Giỏ Hàng<b id="count" >0</b></a></div>
+    
+            </div>
+        </div>
+      </header>
+    <div class="content">
+        <div class="left">
+            <b style="font-size: 24px;">iPhone X 256G - Chính hãng VN/A</b>
+            <div class="line"></div>
+            <img id="img" src="./image/ipx-den.png" alt="ipx" >   
+
+            <div class="box-inf">
+                <div class="inf-top">
+                    <i class="fa fa-shield  "></i>
+                    <span><b>Thông tin sản phẩm</b></span>
+               </div>
+
+
+
+                <div class="inf-bot">
+                    <b>Chế độ bảo hành: <a href="#" style="text-decoration: none;">BẢO HÀNH CHÍNH HÃNG VN/A (4512)</a></b>
+                    <ul type="dash">
+                        <li>Bảo hành <b>1 đổi 1 trong vòng 45 ngày</b> (áp dụng với các lỗi từ nhà sản xuất bao gồm main, nguồn, màn hình)</li>
+                        <li>Bảo hành chính hãng <b>12 tháng</b> tại <b>trung tâm bảo hành Apple Việt Nam</b></li>
+                    </ul>
+                    <b>Tình trạng quy cách sản phẩm</b>
+                    <ul>
+                        <li>Máy mới 100%, chính hãng Apple Việt Nam.</li>
+                        <li>Hộp, Sách hướng dẫn, Cây lấy sim, Cáp sạc</li>
+                        <li>Nhâp trực tiếp từ các nhà phân phối Apple chính hãng tại Việt Nam: Synnex FPT, Digiworld, Dầu khí(Petrosetco), Viettel</li>
+                        <li>Giá bán đã bao gồm thuế (VAT)</li>
+                    </ul>                    
+                </div>
+
+            </div>  
+            
+        
+        </div>
+
+        <div class="right">
+            <div class="box-price">
+                <div class="danhsach">
+                <ul type="none" >
+                    <li style="font-weight: bold; font-size: 30px; color: whitesmoke; ">7.970.000đ</li>
+                    <li style="font-size: 20px;"><strike>8.767.000đ</strike></li>
+                    <li style="border-radius:3px ; background-color: yellow; text-indent: 2px; display: inline; padding: 2px; font-size: 16px; font-weight: bold; box-sizing: border-box;">-10%</li>
+                </ul>  
+            </div>
+                <div class="bodem">
+                    <div class="ngaybatdau" id="NBD">Ngày Khuyến Mãi</div>
+                    <div id="demnguoc">
+                        <div id="days">10</div>
+                        <div class="doc">:</div>
+                        <div id="hours">10</div>
+                        <div class="doc">:</div>
+                        <div id="minute">24</div>
+                        <div class="doc">:</div>
+                        <div id="second">24</div>
+                    </div>
+                    <div class="ketthuc">Sẽ Kết Thúc</div>
+                </div>    
+            </div>
+
+            
+            
+            <div class="container">
+                <button class="phone-box">
+                    <img src="./image/ipx-den.png" alt="x-den" onclick="show_img(this)">
+                    <span onclick="show_img(this)">Đen</span>
+                    <span class="text" onclick="show_img(this)">7.970.000đ</span>
+                </button>
+
+                <button class="phone-box">
+                    <img src="./image/ipx-vang.png" alt="x-vang" onclick="show_img(this)">
+                    <span onclick="show_img(this)">Vàng</span>
+                    <span class="text" onclick="show_img(this)">7.970.000đ</span>
+                </button>
+   
+                <button class="phone-box" >
+                    <img src="./image/ipx-trang.png" alt="x-trang" onclick="show_img(this)">
+                    <span onclick="show_img(this)">Trắng</span>
+                    <span class="text" onclick="show_img(this)">7.970.000đ</span>
+                </button>
+            </div>
+
+            <div class="bonus">
+                <div class="bonus-top">
+                    <i class="fa fa-gift"></i>
+                    <b>Khuyến mãi sản phẩm</b>
+                </div>
+
+                <div class="bonus-bot">
+                <b style="font-size: 16px;">Khuyến mãi khác</b>
+                <ul>
+                    <li>[Ưu đãi] Giảm 10% Cường lực MIPOW - UNIQ - JCPAL - LITO</li>
+                    <li>[Ưu đãi] Giảm 10% ốp lưng MIPOW - UNIQ - JCPAL - HOCO - LITO</li>
+                    <li>[Ưu đãi] Giảm thêm 20% khi mua kèm Cóc & cáp sạc Wekome </li>
+                    <li>[Ưu đãi] Giảm 100.000đ khi mua kèm Pin dự phòng WEKOME 337 20.00mAh</li>
+                    <li>[Ưu đãi] Giảm 30% khi mua kèm viền camera Zeelot</li>
+                    <li>Phụ kiện mua kèm iPhone - Giảm thêm đến 60%</li>
+                </ul>
+                </div>
+
+            </div>
+
+            <div class="box-atc">
+                <button class="add-to-cart-button" style="color: aliceblue;" onclick="themvaogiohang(0)">MUA NGAY <p>Giao tận nơi hoặc lấy tại cửa hàng</p></button>
+                <button class="add-to-cart-button-2" style="color: aliceblue;" onclick="themvaogiohang(0)">MUA TRẢ GÓP 0% <br><span>Duyệt hồ sơ trong 5 phút</span> </button>
+                <button class="add-to-cart-button-2" style="color: aliceblue;" onclick="themvaogiohang(0)">TRẢ GÓP QUA THẺ <br><span>VISA, Master, JCB</span></button>
+            </div>
+
+            <div class="hotline">
+                <a href="#">Chat Zalo </a>
+                <a href="#">Chat trực tuyến</a>
+                <a href="#">1900 9239</a>
+            </div>
+
+
+            <div class="service">
+                <div class="service-top">
+                    <i class="fa fa-heart"></i>
+                    <b>Dịch vụ khác khi mua máy</b>
+                </div>
+
+                <div class="service-bot">
+                <ul>
+                    <li>[Ưu đãi] Thu cũ đổi mới trợ giá lên tới 99%</li>
+                    <li><img src="./image/vnpay.jpg" alt="">[Ưu đãi] Tiết kiệm thêm 300.000đ khi thanh toán qua VNPay</li>
+                    <li><img src="./image/home-paylater.png" alt="">[Ưu đãi] Giảm 5% KHÔNG GIỚI HẠN hóa đơn khi trả góp qua Home Paylater</li>      
+                    <li>[15/4 - 15/5] tặng bảo hiểm rơi vỡ, bảo hành máy đến 365 ngày hoặc tặng voucher thay pin miễn phí trong 5 năm</li>
+                    <li>[Ưu đãi] Giảm thêm 5% trên giá máy và 10% phụ kiện NVB Member</li>
+                    <li>Giao hàng nhanh tại Hồ Chí Minh cho hóa đơn từ 500.000đ (giao trong ngày)</li>
+                </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="f-left">
+            <h2>Đặc điểm nổi bật</h2>
+            <p>Ngay từ khi ra mắt, <a href="#">iPhone X 256GB</a> đã thu hút sự chú ý 
+                đặc biệt của người dùng bởi thiết kế sang trọng, hiệu năng mạnh mẽ 
+                và nhiều tính năng thông minh. </p>
+            <p>Với giá cả phải chăng và nhiều tính năng trên iPhone X mới, chiếc điện thoại này đang trở thành một trong những sản phẩm hot nhất trên thị trường. Bây giờ, hãy cùng tìm hiểu xem iPhone X 256GB có gì đáng sở hữu và vì sao bạn nên mua nó tại <a href="#">Điện Thoại NVB </a> nhé!</p>
+            <img src="./image/ipx-gt.jpg" alt="">
+        </div>
+
+        <div class="f-right">
+            <h2 style="text-align: center;">THÔNG SỐ KỸ THUẬT</h2>         
+            <table class="box-table">
+                <tr class="table-1">
+                    <td>Màn hình:</td>
+                    <td>OLED, 5.8", Super Retina </td>
+                </tr>
+
+                <tr class="table-2">
+                    <td>Hệ điều hành:</td>
+                    <td >IOS 12</td>
+                </tr>
+
+                <tr class="table-1">
+                    <td>Camera sau:</td>
+                    <td>2 camera 12 MP</td>
+                </tr>
+
+                <tr class="table-2">
+                    <td>Camera trước:</td>
+                    <td>7 MP</td>
+                </tr>
+
+                <tr class="table-1">
+                    <td>Chip:</td>
+                    <td>Apple A11 Bionic</td>
+                </tr>
+
+                <tr class="table-2">
+                    <td>Ram:</td>
+                    <td>3 GB</td>
+                </tr>
+
+                <tr class="table-1">
+                    <td>Dung lượng lưu trữ:</td>
+                    <td>256 GB</td>
+                </tr>
+
+                <tr class="table-2">
+                    <td>SIM:</td>
+                    <td>1 Nano SIM, Hỗ trợ 4G</td>
+                </tr>
+
+                <tr class="table-1">
+                    <td>Pin, Sạc:</td>
+                    <td>2716 mAh, 18W</td>
+                </tr>
+
+                <tr class="table-2">
+                    <td>Trọng lượng, kích thước:</td>
+                    <td>174gram, 143,6 x 70,9 x 7,7 mm</td>
+                </tr>
+
+                <tr class="table-1">
+                    <td>Cổng kết nối:</td>
+                    <td>Lightning</td>
+                </tr>
+
+                <tr class="table-2">
+                    <td>Hãng:</td>
+                    <td>Apple</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="row row2">
+          <div class="col-sm-3">
+            <h4>THÔNG TIN LIÊN HỆ</h4>
+            <p><b>Mua nhanh Online:</b> 19008922 (8h-24h mỗi ngày)</p>
+            <p><b>Góp Ý/ Phản Ánh về DV:</b> 0364444247 (8h-24h mỗi ngày)</p>
+            <p><b>Bảo hành - Hỗ trợ kỹ thuật:</b> 0868922247 (9h-21h mỗi ngày)</p>
+            <p><b>Hỗ trợ khách hàng:</b>hotro@112233.vn</p>
+          </div>
+          <div class="col-sm-3">
+            <h4>THÔNG TIN & CHÍNH SÁCH</h4>
+            <p>Ưu đãi Giá Kho Member</p>
+            <p>Chính sách giao nhận - kiểm hàng</p>
+            <p>Chính sách bảo mật thông tin</p>
+            <p>Dịch vụ sửa chữa</p>
+          </div>
+          <div class="col-sm-3">
+            <h4>SHOWROOM GIÁ</h4>
+            <p><b>Giờ hoạt động Showroom: 8h30 - 21h30</b></p>
+            <p>947 Quang Trung, P14, Quận Gò Vấp, TP. HCM</p>
+            <p>56 Lê Văn Việt, Phường Hiệp Phú, TP. Thủ Đức</p>
+            <p>1247, Đường 3 Tháng 2, P6, Quận 11, TP. HCM</p>
+          </div>
+          <div class="col-sm-3">
+            <h4>DỊCH VỤ VÀ THÔNG TIN KHÁC</h4>
+            <p>Tuyển dụng</p>
+            <p>Điều khoản và sử dụng</p>
+          </div>
+        </div>
+      </footer>
+</div>
+</body>
+</html>

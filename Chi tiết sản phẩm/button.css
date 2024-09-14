@@ -1,0 +1,66 @@
+.box-atc{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.box-atc p{
+    margin: auto;
+    font-size: 16px;
+}
+
+.box-atc span{
+    font-size: 13px;
+}
+
+
+.add-to-cart-button{
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    border: 0px;
+    background-color: rgb(235, 64, 64);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;  
+    text-emphasis-color: #fff;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+
+
+.add-to-cart-button:hover {
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+    background-color: rgb(193, 118, 33);
+    transform: translateY(-1px);
+}
+
+.add-to-cart-button-2{
+    width: 49%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: rgb(28, 153, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;    
+    font-weight: bold;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.add-to-cart-button-2:active {
+    box-shadow: 0 0 0 0.2rem rgb(207, 46, 46);
+    transform: translateY(4px);
+}
+
+  .add-to-cart-button-2:hover {
+    cursor: pointer;
+}
+
+.add-to-cart-button-2:hover {
+    background-color: rgb(33, 191, 219);
+    transform: translateY(-1px);
+}

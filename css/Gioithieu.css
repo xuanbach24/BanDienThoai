@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    color: white;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+
+:root{
+    --primary-color: #ffd600;
+    --secondary-color: #ea5705;
+    --end-color: #f2726a;
+
+}
+
+/* header */
+.container-fluid {
+    max-width: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.home{
+    justify-content: left;
+}
+
+.home a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1.2rem;
+    color: black;
+}
+
+.logo{
+    width: 140px;
+}
+
+.search{
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+
+}
+
+.search-main{
+    width: fit-content;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.search-main > i{
+    font-size: 20px;
+    padding: 8px;
+}
+
+.Hethong{
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.href{
+    padding: 22px 10px;
+
+}
+
+.href > a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+a:hover{
+    color: var(--secondary-color);
+}
+
+
+@media (max-width: 1200px) {
+    .container-fluid {
+        padding: 5px;
+    }
+
+    .logo {
+        max-width: 8rem;
+    }
+
+    .search-main {
+        max-width: 60%;
+        height: 35px;
+        margin: 15px 0px;
+    }
+
+    .search-main i{
+        display: none;
+    }
+
+    .Hethong {
+        font-size: 1rem;
+    }
+
+    .href {
+        padding: 1rem 0.5rem;
+        cursor: pointer;
+    }
+
+    .href > i{
+        font-size: 1rem;
+    }
+
+    .href > a {
+        padding: 1rem 0.5rem;
+    }
+    .banner-left,.banner-right,.search-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .logo {
+        max-width: 6rem;
+    }
+
+    .search-main {
+        max-width: 100%;
+        height: 25px;
+        margin-top: 20px;
+    }
+
+    .search{
+        width: 100%;
+    }
+
+    .search-main > i {
+
+        display: none;
+    }
+
+    .Hethong {
+        font-size: 0.9rem;
+    }
+
+    .href {
+        padding: 0.8rem 0.4rem;
+    }
+
+    .href > i{
+        font-size: 0.9rem;
+    }
+
+    .href > a {
+        padding: 0.8rem 0.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .home, .search-main, .Hethong {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .home{
+        margin-top: 10px;
+    }
+
+    .logo {
+        max-width: 5rem;
+    }
+
+    .search-main {
+        max-width: 100%;
+        height: 25px;
+        margin-top: 20px;
+    }
+
+    .search{
+        width: 100%;
+    }
+
+    .search-main > i {
+
+        display: none;
+    }
+
+    .Hethong {
+        font-size: 0.8rem;
+    }
+
+    .href {
+        padding: 0.6rem 0.3rem;
+    }
+
+    .href > i{
+        display: none;
+    }
+
+    .href > a {
+        padding: 0.6rem 0.3rem;
+    }
+    .title-slide{
+        font-size: 0.8rem;
+    }
+
+   
+
+
+}
+
+/* header */
+
+
+/* main */
+
+/* profile */
+.profile-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.profile{
+    width: 280px;
+    text-align: center;
+    background: #242628;
+    height: 440px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 40px;
+
+}
+
+.image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.image{
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--end-color);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    transform: translateY(25px);
+    transition: 0.5s;
+}
+
+.name{
+    margin-top: 25px;
+    color: white;
+}
+
+.text{
+    color: var(--end-color);
+    text-align: center;
+}
+
+.profile i{
+    color: white;
+    font-size: 24px;
+    margin: 14px;
+}
+
+.see{
+    color: rgb(193, 186, 189);
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.more{
+    color: rgb(255, 255, 255);
+    padding: 6px 20px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 6px 20px;
+    background-color: #00853e;
+    display: inline-block;
+}
+
+.image:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    transform: unset;
+    border: none;
+}
+
+
+.see> span > b{
+    color: var(--end-color);
+}
+/* profile */

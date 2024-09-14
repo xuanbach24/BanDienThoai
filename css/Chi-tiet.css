@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    color: white;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+:root{
+    --primary-color: #ffd600;
+    --secondary-color: #ea5705;
+}
+.container-fluid{
+    background-color: var(--primary-color);
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    height: 4.6rem;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home{
+    justify-content: left;
+    height: 4.6rem;
+}
+
+.home a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1.2rem;
+    color: black;
+}
+
+.logo{
+    width: 160px;
+    height: 4.6rem;
+}
+
+.search{
+    width: 70%;
+    height: 40px;
+    margin: 22px 0px;
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+}
+
+.Hethong{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.href{
+    margin: 0 12px;
+    display: inline-block;
+}
+
+.href > a{
+    text-decoration: none;
+    color: #000;
+    padding: 22px 0px;
+}
+
+a:hover{
+    color: var(--secondary-color);
+}
+
+
+
+/* main */
+.content{
+    width: 80%;
+    background-color: rgb(195, 195, 195);
+    margin: 8.6rem auto;
+}
+
+.img{
+    text-align: center;
+}
+
+img{
+    width: 80%;
+
+    object-fit: cover;
+}
+
+.hotline-title{
+    margin-top: 12px;
+}
+
+.row2{
+    font-size: small;
+    color: rgb(102, 102, 102);
+    width: 100%;
+}
+
+footer{
+    padding: 1rem 4.2rem;
+    background-color: rgb(215, 210, 210);
+}
+
+.row2 h4{
+    font-weight: bold;
+    color: black;
+}

@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #ffd600;
+    --secondary-color: #ea5705;
+}
+
+.container-fluid {
+    max-width: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.home{
+    justify-content: left;
+}
+
+.home a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1.2rem;
+    color: black;
+}
+
+.logo{
+    width: 140px;
+}
+
+.search{
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+
+}
+
+.search-main{
+    width: fit-content;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.search-main > i{
+    font-size: 20px;
+    padding: 8px;
+}
+
+.Hethong{
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.href{
+    padding: 22px 10px;
+
+}
+
+.href > a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+a:hover{
+    color: var(--secondary-color);
+}
+
+
+@media (max-width: 1200px) {
+    .container-fluid {
+        padding: 5px;
+    }
+
+    .logo {
+        max-width: 8rem;
+    }
+
+    .search-main {
+        max-width: 60%;
+        height: 35px;
+        margin: 15px 0px;
+    }
+
+    .search-main i{
+        display: none;
+    }
+
+    .Hethong {
+        font-size: 1rem;
+    }
+
+    .href {
+        padding: 1rem 0.5rem;
+        cursor: pointer;
+    }
+
+    .href > i{
+        font-size: 1rem;
+    }
+
+    .href > a {
+        padding: 1rem 0.5rem;
+    }
+    .banner-left,.banner-right,.search-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .logo {
+        max-width: 6rem;
+    }
+
+    .search-main {
+        max-width: 100%;
+        height: 25px;
+        margin-top: 20px;
+    }
+
+    .search{
+        width: 100%;
+    }
+
+    .search-main > i {
+
+        display: none;
+    }
+
+    .Hethong {
+        font-size: 0.9rem;
+    }
+
+    .href {
+        padding: 0.8rem 0.4rem;
+    }
+
+    .href > i{
+        font-size: 0.9rem;
+    }
+
+    .href > a {
+        padding: 0.8rem 0.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .home, .search-main, .Hethong {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .home{
+        margin-top: 10px;
+    }
+
+    .logo {
+        max-width: 5rem;
+    }
+
+    .search-main {
+        max-width: 100%;
+        height: 25px;
+        margin-top: 20px;
+    }
+
+    .search{
+        width: 100%;
+    }
+
+    .search-main > i {
+
+        display: none;
+    }
+
+    .Hethong {
+        font-size: 0.8rem;
+    }
+
+    .href {
+        padding: 0.6rem 0.3rem;
+    }
+
+    .href > i{
+        display: none;
+    }
+
+    .href > a {
+        padding: 0.6rem 0.3rem;
+    }
+    .title-slide{
+        font-size: 0.8rem;
+    }
+
+   
+
+
+}
+
+
+/*Login*/
+
+#login > a:hover{
+    color: var(--secondary-color);
+}
+
+#login-main{
+    position: absolute;
+    background-color: rgb(156, 153, 153);
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    box-shadow: 1px 1px 15px rgb(134, 134, 134);
+    
+}
+
+#login-main > a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#login-main > a:hover{
+    background-color: rgb(239, 232, 232);
+}
+
+#login-main > .dangxuat{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 8px 7px;
+}
+/*Login*/
+
+
+/* main */
+
+.content-main{
+    width: 100%;
+}
+.giohang-main{
+    width: 80%;
+    margin: 100px auto 0px auto;
+}
+
+#table-store >table,tr,th,td{
+    border: none;
+    text-align: center;
+    padding: 10px;
+}
+#table-store{
+    width: 100%;
+    height: 600px;
+    overflow:auto;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color:  lightgray;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#resetId{
+    width: 80%;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.namesp{
+    width: 200px;
+}
+
+.stt{
+    width: 20px;
+}
+
+.dongia{
+    width: 200px;
+}
+
+.imag{
+    width: 200px;
+}
+
+.soluong{
+    width: 80px;
+}
+.thanhtien{
+    width: 10%;
+}
+
+td >img{
+    width: 40%;
+}
+/* main */
+
+.row2{
+    font-size: small;
+    color: rgb(102, 102, 102);
+    width: 100%;
+}
+
+footer{
+    margin-top: 40px;
+    padding: 1rem 4.2rem;
+    background-color: rgb(215, 210, 210);
+}
+
+.row2 h4{
+    font-weight: bold;
+    color: black;
+}
